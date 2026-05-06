@@ -271,7 +271,7 @@ main .logo {
 }
 
 .werkstatt img {
-    max-height: 600px;
+    max-height: 500px;
     filter: grayscale(1);
 }
 
