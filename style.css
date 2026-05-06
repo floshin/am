@@ -225,7 +225,7 @@ main .logo {
 
 .team img {
     max-width: 100%;
-    max-height: 100%;
+    /*max-height: 100%;*/
     filter: grayscale(1);
 }
 
@@ -234,11 +234,9 @@ main .logo {
 }
 
 .team figure figcaption {
-    position: absolute;
     padding: 20px;
     justify-content: center;
     letter-spacing: 1px;
-    color: white;
 }
 
 .team figure figcaption h3 {
