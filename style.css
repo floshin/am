@@ -23,6 +23,7 @@ header {
     top: 0;
     height: 70px;
     width: 100%;
+    z-index: 10;
 }
 
 header ul, footer ul {
@@ -67,7 +68,7 @@ h3 {
     padding: 20px;
 }
 
-.angebot, .team, .kontakt, .werkstatt {
+.angebot, .kontakt {
     padding: 50px 20px;
 }
 
@@ -192,6 +193,10 @@ main .logo {
 
 /* TEAM */ 
 
+.team {
+    padding: 20px 20px 50px;
+}
+
 .team ul {
     list-style: none;
     display: flex;
@@ -204,8 +209,39 @@ main .logo {
 .team ul li {
     width: 100%;
     background: gray;
-    height: 450px;
+    
+    padding: 0px;
+    overflow: hidden;
+}
+
+.team-foto {
+    width: 100%;
+}
+
+.team img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(1);
+}
+
+.team figure {
+    display: flex;
+}
+
+.team figure figcaption {
+    position: absolute;
     padding: 20px;
+    justify-content: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.team figure figcaption h3 {
+    font-size: 22px;
+}
+
+.team figure figcaption p {
+    font-weight: bold;
 }
 
 
@@ -216,6 +252,24 @@ main .logo {
     line-height: 2em;
     padding-bottom: 15px;
 }
+
+
+/* GALLERY / WERKSTATT */
+
+.werkstatt {
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow: auto;
+    gap: 10px;
+    padding: 10px;
+    background: #1c1c1c;
+}
+
+.werkstatt img {
+    max-height: 700px;
+    filter: grayscale(1);
+}
+
 
 
 /* FOOTER */
@@ -258,6 +312,13 @@ footer {
     margin-bottom: 10px;
 }
 
+
+/* SELECTION */
+
+::selection {
+    color: #1c1c1c;
+    background: #747474;
+}
 
 /* TO BE REMOVED */
 
