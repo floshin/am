@@ -229,10 +229,6 @@ main .logo {
     filter: grayscale(1);
 }
 
-.team figure {
-    display: flex;
-}
-
 .team figcaption {
     padding: 20px;
     letter-spacing: 1px;
@@ -240,10 +236,6 @@ main .logo {
 
 .team figcaption h3 {
     font-size: 22px;
-}
-
-.team figcaption p {
-    /*font-weight: bold;*/
 }
 
 
