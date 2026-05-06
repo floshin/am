@@ -216,7 +216,7 @@ main .logo {
     background: gray;
     
     padding: 0px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .team-foto {
@@ -233,18 +233,17 @@ main .logo {
     display: flex;
 }
 
-.team figure figcaption {
+.team figcaption {
     padding: 20px;
-    justify-content: center;
     letter-spacing: 1px;
 }
 
-.team figure figcaption h3 {
+.team figcaption h3 {
     font-size: 22px;
 }
 
-.team figure figcaption p {
-    font-weight: bold;
+.team figcaption p {
+    /*font-weight: bold;*/
 }
 
 
