@@ -51,9 +51,12 @@ header img {
 
 /* ABSTÄNDE */
 
-.intro h1 {
+.intro {
     margin-top: 110px;
 }
+    .intro h1 {
+        margin-top: 20px;
+    }
 
 h2 {
     margin-top: 10px;
@@ -70,6 +73,11 @@ h3 {
 
 .angebot, .kontakt {
     padding: 50px 20px;
+    line-height: 1.5;
+}
+
+.angebot p {   
+    padding-bottom: 1em;
 }
 
 
@@ -94,6 +102,9 @@ header a:hover, footer a:hover, .kontakt a:hover {
     display: flex;
     flex-direction: column;
 }
+    .intro p {
+        font-size: 26px;
+    }
 
 main .logo {
     max-width: 80%;
@@ -155,9 +166,10 @@ and (min-width : 820px) {
 
 .zeiten {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .zeiten section {
@@ -177,6 +189,25 @@ and (min-width : 820px) {
 }
 
 
+/* SCHLIESSZEITEN */
+
+.closed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 50px;
+    background: #c2c2c2;
+    line-height: 1.5;
+}
+    .closed p, .closed ul {
+        max-width: 700px;
+    }
+    .closed ul {
+        margin-top: 20px;
+    }
+
+
+
 /* SERVICES */
 
 .services {
@@ -185,15 +216,17 @@ and (min-width : 820px) {
 }
 
 .services ul {
-    line-height: 1.2em;
+    line-height: 1.4em;
     list-style: none;
 }
 
 .services h4 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 20px;
     font-weight: normal;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #747474
 }
 
 .services li {
@@ -237,6 +270,8 @@ and (min-width : 900px) {
 .subtext {
     font-size: 12px;
     color: rgb(136, 136, 136);
+    margin: 15px 0 0;
+    line-height: initial;
 }
 
 
@@ -325,6 +360,10 @@ and (min-width : 900px) {
     list-style: none;
     line-height: 2em;
     padding-bottom: 15px;
+}
+
+.kontakt p {
+    margin-bottom: 30px;
 }
 
 @media only screen
