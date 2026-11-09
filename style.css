@@ -113,6 +113,9 @@ main .logo {
 @media only screen
 and (min-width : 820px) {
 
+    main {
+        min-height: 100vh;
+    }
     main .logo {
         max-width: 30%;
     }
@@ -416,6 +419,7 @@ footer {
     padding: 20px;
     font-size: 12px;
     justify-content: space-between;
+
 }
 
 @media only screen
